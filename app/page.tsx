@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useRef } from "react";
 
 export default function Home() {
@@ -157,6 +158,13 @@ export default function Home() {
             className="w-full aspect-[4/3] rounded-3xl border border-white/15 bg-slate-900/80 backdrop-blur shadow-[0_20px_60px_rgba(15,23,42,0.45)]"
           />
         </div>
+        <Link
+          href="/japanese-landscape"
+          className="inline-flex items-center gap-2 rounded-full border border-sky-500/30 bg-sky-500/10 px-5 py-2 text-sky-300 transition hover:border-sky-300/70 hover:text-sky-100"
+        >
+          <span aria-hidden>→</span>
+          Explore the Japanese rain landscape
+        </Link>
       </div>
     </main>
   );
